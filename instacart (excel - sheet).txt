@@ -1,0 +1,40 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	instacart_id (integer)
+	store_name (varchar)
+	restaurant_id (integer)
+	item_count (integer)
+	item_found (integer)
+	item_adjusted (integer)
+	savings_id (integer with the ability to have NULL)
+   	refund_id (integer with the ability to have NULL)
+   	delivery_date (date)
+   	completed_delivery (string but works as a boolean (YES or NO))
+	instacart_membership (string but works as a boolean (YES or NO))
+	benefits (string but works as a boolean (YES or NO))
+	original_charge (float because it can have decimals)
+   	final_price (float because it can have decimals)
+
+2. Every store has a unique id.
+
+3. Each time there is a form of saving in an order, there will be a savings_id allocated to it.
+
+4. Each time there is a refund of an order, there will be a refund_id attached to the order.
+
+5. Each time there is a tip  in an order, there will be a tip_id associated with it.
+
+6. delivery_date works as days an attempt was made to order instead of when they were actually delivered.
+
+7. final_price is the amount that was spent that day, even with a refund some money is usually taken by uber.
+
+8. item_count works as the total number of items that was ordered while item_found works as the total that were found without any adjustments.
+
+9. item_adjusted contains the count of items that were either adjusted or not found, typically when they are not found there should be a refund.
+
+10. original_charge is the price quote given by instacart before the driver starts shopping for said items.
+
+11. benefits is a boolean that if yes indicates there was a discount or a coupon or something typically that involves saving money. Hence why it is possible to have an instacart membership and not have a benefit.
+
+12. final_price is the price after the savings/refund/tip amount is added or deducted.
+
+13. some items in orders will not be counted as adjusted because it has to do with the weight of something, eg fruits. Items like this won't count as you are not usually given an accurate price for them.

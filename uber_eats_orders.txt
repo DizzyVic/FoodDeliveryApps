@@ -1,0 +1,21 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	order_id (integer)
+	order_item (varchar)
+	uber_id (integer)
+	quantity (integer)
+   	price (float because it can have decimals)
+
+2. Every item in an order has a unique order_id.
+
+3. order_item is the name of each individual item in the order.
+
+4. uber_id is the unique id given in the uber_eats sheet, this is where the two are linked.
+
+5. quantity is just the number of items that were ordered.
+
+6. price is the amount shown on the receipt to indicate it's value.
+
+7. Uncompleted Orders (Eg uber_eats.uber_id = 123) don't have anything in uber_eats_orders as no receipt was generated to convey the transaction.
+
+8. Orders that were refunded will have a 0 for their price to indiate that nothing was spent.

@@ -1,0 +1,18 @@
+********************** STEPS **********************
+1. Took time to make a dbdiagaram schema of how I want the final product to be. This can be changed anytime in the process.
+
+2. Made an excel sheet to store all data.
+
+3. Started to work on the Uber_Eats sheet along other sheets that will be needed from the schema. Made a note that has an explanation for the uber_eats sheet specifically.
+
+4. Started to work on the skip_the_dishes sheet.
+
+5. Started wor work on the instacart sheet.
+
+6. started the dominos sheet.
+
+7. Went back to the shema to add two more sheets to give a better detail of everything.
+
+8. started the uber_eats_orders sheet.
+
+9. started the instacart_orders sheet.

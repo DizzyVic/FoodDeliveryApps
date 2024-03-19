@@ -1,0 +1,21 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	order_id (integer)
+	order_item (varchar)
+	uber_id (integer)
+	quantity (integer)
+   	price (float because it can have decimals)
+
+2. Every item in an order has a unique order_id.
+
+3. order_item is the name of each individual item in the order.
+
+8. Refunded items will also have a category of "Refund" and the amount refunded is in the refund sheet but in the price side it will have a negative number.
+
+9. Replaced/adjusted items will have a category of "Adjusted".
+
+10. order_item that is adjusted will showcase the name of the item that was swapped to and it's price. To see the item originally requested item, go to the instacart_adjusted sheet.
+
+11. measurement has a variety of different ways some things are measured, those that have "each" usually simply mean that they are sold individually.
+
+12. Items that were not charged will have a category of "Not Charged".

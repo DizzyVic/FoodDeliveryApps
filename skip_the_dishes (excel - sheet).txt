@@ -1,0 +1,24 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	skip_id (integer)
+	restaurant_name (varchar)
+	restaurant_id (integer)
+	savings_id (integer with the ability to have NULL)
+   	refund_id (integer with the ability to have NULL)
+   	delivery_date (date)
+   	completed_delivery (string but works as a boolean (YES or NO))
+	discount (string but works as a boolean (YES or NO))
+   	total_price (float because it can have decimals)
+
+2. Every restaurant has a unique id.
+
+3. Each time there is a form of saving in an order, there will be a savings_id allocated to it.
+
+4. Each time there is a refund of an order, there will be a refund_id attached to the order.
+
+5. delivery_date works as days an attempt was made to order instead of when they were actually delivered.
+
+6. total_price is the amount that was spent that day, even with a refund some money is usually taken by uber.
+
+7. discount can be set to YES but skip the dishes doesn't tell us what amount was used as skip credit. Only the ones that are mentioned will I give them a savings_id.
+

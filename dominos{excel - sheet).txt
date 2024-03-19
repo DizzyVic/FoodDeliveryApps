@@ -1,0 +1,32 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	dominos_id (integer)
+	main_order (varchar)
+	restaurant_id (integer)
+	item_count (integer)
+	coupon_id (integer)
+	points (integer)
+	points_balance (integer)
+   	delivery_date (date)
+   	coupons (string but works as a boolean (YES or NO))
+   	total_price (float because it can have decimals)
+
+2. Every store has a unique id.
+
+3. main_order is the most expensive item that was ordered in that batch.
+
+4. item_count this is the total number of items in that order.
+
+5. coupon_id is linked to the coupons sheet that stores all the coupons description.
+
+6. delivery_date works as days an attempt was made to order instead of when they were actually delivered.
+
+7. total_price is the amount that was spent that day, even with a refund some money is usually taken by uber.
+
+8. points is the amount gained or lost in an order. You gain 10pts for every order that is above $10, 60 points can be used to redeem a medium 2 topping pizza.
+
+9. points_balance is the amount of points left after an order.
+
+10. coupons is the field that let's us know if a coupon was used in the order.
+
+11. restaurant_id will always be 80 because that is the unique code given to Dominos from the restaurant sheet.

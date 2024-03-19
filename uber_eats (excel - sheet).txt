@@ -1,0 +1,38 @@
+********************** NOTE **********************
+1. Data type of each column:
+   	uber_id (integer)
+   	restaurant_name (string)
+   	restaurant_id (integer)
+   	savings_id (integer with the ability to have NULL)
+   	refund_id (integer with the ability to have NULL)
+   	delivery_date (date)
+   	completed_delivery (string but works as a boolean (YES or NO))
+   	uber_pass (string but works as a boolean (YES or NO))
+   	discount (string but works as a boolean (YES or NO))
+   	total_price (float because it can have decimals)
+
+2. Every restaurant has a unique id.
+
+3. Each time there is a form of saving in an order, there will be a savings_id allocated to it.
+
+4. Each time there is a refund of an order, there will be a refund_id attached to the order.
+
+5. delivery_date works as days an attempt was made to order instead of when they were actually delivered.
+
+6. total_price is the amount that was spent that day, even with a refund some money is usually taken by uber.
+
+7. English interpretation of completed_delivery, uber_pass, discount with various values:
+a. YES, YES, YES : The order was completed using an uber pass and there was a discount.
+b. YES, YES, NO : The order was completed using an uber pass but there was no discount.
+c. YES, NO, YES : The order was completed without an uber pass but there was a discount.
+d. NO, YES, YES : This is not possible because if the order is not completed and we have uber pass and a discount was applied, it wouldn't make any sense.
+e. YES, NO, NO : The order was completed wihtout an uber pass and a discount.
+f. NO, YES, NO : The order wasn't completed with the uber pass and there was no discount.
+g. NO, NO, YES : This is not possible because if the order wasn't completed and there was no uber pass but there was a discount applied.
+h. NO, NO, NO : The order was not completed and there was no uber pass nor any discounts.
+
+8. There was a total of 218 orders between 22/04/2023 to 02/03/2024.
+
+9. An uber_id that doesn't have a savings_id means that there was nothing saved in that order.
+
+10. Might change where NULL is in savings__id and refund_id.
